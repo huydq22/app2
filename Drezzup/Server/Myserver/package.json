@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  },
+  "scripts": {
+    "start": "json-server --host 192.168.100.163 --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

@@ -1,0 +1,1189 @@
+{
+  "categories": [
+    {
+      "category_id": 1,
+      "parent_category_id": null,
+      "name": "Nam",
+      "description": "Trang phục nam giới",
+      "image_url": "https://example.com/category-men.jpg"
+    },
+    {
+      "category_id": 2,
+      "parent_category_id": null,
+      "name": "Nữ",
+      "description": "Trang phục nữ giới",
+      "image_url": "https://example.com/category-women.jpg"
+    },
+    {
+      "category_id": 3,
+      "parent_category_id": 1,
+      "name": "Áo nam",
+      "description": "Các loại áo nam",
+      "image_url": "https://example.com/men-shirts.jpg"
+    },
+    {
+      "category_id": 4,
+      "parent_category_id": 1,
+      "name": "Quần nam",
+      "description": "Các loại quần nam",
+      "image_url": "https://example.com/men-pants.jpg"
+    },
+    {
+      "category_id": 5,
+      "parent_category_id": null,
+      "name": "Phụ kiện",
+      "description": "Phụ kiện thời trang",
+      "image_url": "https://example.com/accessories.jpg"
+    },
+    {
+      "category_id": 6,
+      "parent_category_id": 2,
+      "name": "Áo nữ",
+      "description": "Các loại áo nữ",
+      "image_url": "https://example.com/women-shirts.jpg"
+    },
+    {
+      "category_id": 7,
+      "parent_category_id": 2,
+      "name": "Váy",
+      "description": "Các loại váy nữ",
+      "image_url": "https://example.com/dresses.jpg"
+    },
+    {
+      "category_id": 8,
+      "parent_category_id": 5,
+      "name": "Thắt lưng",
+      "description": "Các loại thắt lưng",
+      "image_url": "https://example.com/belts.jpg"
+    },
+    {
+      "category_id": 9,
+      "parent_category_id": null,
+      "name": "Unisex",
+      "description": "Sản phẩm dành cho cả nam và nữ",
+      "image_url": "https://example.com/unisex.jpg"
+    },
+    {
+      "category_id": 10,
+      "parent_category_id": null,
+      "name": "Mùa Hè",
+      "description": "Trang phục mùa hè",
+      "image_url": "https://example.com/summer.jpg"
+    },
+    {
+      "category_id": 11,
+      "parent_category_id": null,
+      "name": "Mùa Thu",
+      "description": "Trang phục mùa thu",
+      "image_url": "https://example.com/fall.jpg"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "category_id": 1,
+      "name": "Áo Quần Phong Cách Thời Trang",
+      "description": "Áo là một loại trang phục cao cấp ở phần trên của cơ thể. Được thiết kế với nhiều kiểu dáng, chất liệu và màu sắc khác nhau.",
+      "price": 350000,
+      "stock_quantity": 100,
+      "image_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=400&fit=crop",
+        "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop"
+      ],
+      "is_featured": true,
+      "is_recommended": true,
+      "rating": 4.0,
+      "variants": [
+        {
+          "size": "S",
+          "color": "White",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "color": "White",
+          "stock": 15
+        },
+        {
+          "size": "L",
+          "color": "White",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "color": "White",
+          "stock": 8
+        },
+        {
+          "size": "XXL",
+          "color": "White",
+          "stock": 5
+        },
+        {
+          "size": "S",
+          "color": "Black",
+          "stock": 8
+        },
+        {
+          "size": "M",
+          "color": "Black",
+          "stock": 12
+        },
+        {
+          "size": "L",
+          "color": "Black",
+          "stock": 10
+        },
+        {
+          "size": "XL",
+          "color": "Black",
+          "stock": 6
+        },
+        {
+          "size": "XXL",
+          "color": "Black",
+          "stock": 3
+        },
+        {
+          "size": "S",
+          "color": "Blue",
+          "stock": 7
+        },
+        {
+          "size": "M",
+          "color": "Blue",
+          "stock": 9
+        },
+        {
+          "size": "L",
+          "color": "Blue",
+          "stock": 8
+        },
+        {
+          "size": "XL",
+          "color": "Blue",
+          "stock": 5
+        },
+        {
+          "size": "S",
+          "color": "Gray",
+          "stock": 5
+        },
+        {
+          "size": "M",
+          "color": "Gray",
+          "stock": 7
+        },
+        {
+          "size": "L",
+          "color": "Gray",
+          "stock": 6
+        },
+        {
+          "size": "XL",
+          "color": "Gray",
+          "stock": 4
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Văn A",
+          "rating": 5,
+          "comment": "Rất tuyệt vời!",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Văn B",
+          "rating": 4,
+          "comment": "Rất thích sự đẹp, tôi rất hài lòng với sản phẩm này.",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Ngô Hạnh C",
+          "rating": 5,
+          "comment": "So good!!!!!!",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Văn D",
+          "rating": 4,
+          "comment": "Chất lượng tốt, đáng mua.",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Thị E",
+          "rating": 3,
+          "comment": "Sản phẩm tạm được, giao hàng hơi chậm.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Văn F",
+          "rating": 5,
+          "comment": "Tuyệt vời, sẽ mua lại!",
+          "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-12-01T08:00:00Z",
+      "updated_at": "2024-12-01T10:30:00Z"
+    },
+    {
+      "id": 2,
+      "category_id": 2,
+      "name": "Váy hoa vintage",
+      "description": "Váy hoa phong cách vintage, nhẹ nhàng và thanh lịch",
+      "price": 450000,
+      "stock_quantity": 60,
+      "image_url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop"
+      ],
+      "is_featured": true,
+      "is_recommended": true,
+      "rating": 4.2,
+      "variants": [
+        {
+          "size": "S",
+          "color": "Pink",
+          "stock": 8
+        },
+        {
+          "size": "M",
+          "color": "Pink",
+          "stock": 12
+        },
+        {
+          "size": "L",
+          "color": "Pink",
+          "stock": 10
+        },
+        {
+          "size": "XL",
+          "color": "Pink",
+          "stock": 6
+        },
+        {
+          "size": "S",
+          "color": "Blue",
+          "stock": 6
+        },
+        {
+          "size": "M",
+          "color": "Blue",
+          "stock": 9
+        },
+        {
+          "size": "L",
+          "color": "Blue",
+          "stock": 7
+        },
+        {
+          "size": "XL",
+          "color": "Blue",
+          "stock": 4
+        },
+        {
+          "size": "S",
+          "color": "White",
+          "stock": 7
+        },
+        {
+          "size": "M",
+          "color": "White",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "color": "White",
+          "stock": 8
+        },
+        {
+          "size": "XL",
+          "color": "White",
+          "stock": 5
+        },
+        {
+          "size": "S",
+          "color": "Yellow",
+          "stock": 5
+        },
+        {
+          "size": "M",
+          "color": "Yellow",
+          "stock": 8
+        },
+        {
+          "size": "L",
+          "color": "Yellow",
+          "stock": 6
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Thị G",
+          "rating": 5,
+          "comment": "Váy rất đẹp, đúng như mô tả!",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Thị H",
+          "rating": 4,
+          "comment": "Chất vải tốt, form dáng đẹp.",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Thị I",
+          "rating": 5,
+          "comment": "Rất hài lòng với sản phẩm!",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Văn K",
+          "rating": 3,
+          "comment": "Váy đẹp nhưng hơi nhỏ so với size.",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Thị L",
+          "rating": 4,
+          "comment": "Đẹp, giao hàng nhanh.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Vũ Văn M",
+          "rating": 5,
+          "comment": "Mua tặng bạn gái, cô ấy rất thích!",
+          "avatar": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-11-15T09:15:00Z",
+      "updated_at": "2024-11-28T14:20:00Z"
+    },
+    {
+      "id": 3,
+      "category_id": 3,
+      "name": "Áo khoác nữ kaki",
+      "description": "Áo khoác nữ chất kaki, phong cách Hàn Quốc",
+      "price": 600000,
+      "stock_quantity": 30,
+      "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop"
+      ],
+      "is_featured": false,
+      "is_recommended": true,
+      "rating": 4.5,
+      "variants": [
+        {
+          "size": "S",
+          "color": "Beige",
+          "stock": 5
+        },
+        {
+          "size": "M",
+          "color": "Beige",
+          "stock": 8
+        },
+        {
+          "size": "L",
+          "color": "Beige",
+          "stock": 6
+        },
+        {
+          "size": "XL",
+          "color": "Beige",
+          "stock": 4
+        },
+        {
+          "size": "S",
+          "color": "Black",
+          "stock": 6
+        },
+        {
+          "size": "M",
+          "color": "Black",
+          "stock": 9
+        },
+        {
+          "size": "L",
+          "color": "Black",
+          "stock": 7
+        },
+        {
+          "size": "XL",
+          "color": "Black",
+          "stock": 5
+        },
+        {
+          "size": "S",
+          "color": "Navy",
+          "stock": 4
+        },
+        {
+          "size": "M",
+          "color": "Navy",
+          "stock": 7
+        },
+        {
+          "size": "L",
+          "color": "Navy",
+          "stock": 5
+        },
+        {
+          "size": "S",
+          "color": "Brown",
+          "stock": 3
+        },
+        {
+          "size": "M",
+          "color": "Brown",
+          "stock": 6
+        },
+        {
+          "size": "L",
+          "color": "Brown",
+          "stock": 4
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Thị N",
+          "rating": 5,
+          "comment": "Áo khoác rất đẹp và ấm áp!",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Văn O",
+          "rating": 4,
+          "comment": "Chất liệu tốt, phong cách Hàn Quốc đúng như mô tả.",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Thị P",
+          "rating": 4,
+          "comment": "Mặc rất thoải mái, form dáng đẹp.",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Văn Q",
+          "rating": 5,
+          "comment": "Chất lượng tuyệt vời, đáng đồng tiền!",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Thị R",
+          "rating": 3,
+          "comment": "Đẹp nhưng hơi dày so với mong đợi.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Vũ Văn S",
+          "rating": 4,
+          "comment": "Phong cách trẻ trung, phù hợp đi làm.",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-11-10T11:00:00Z",
+      "updated_at": "2024-11-30T16:45:00Z"
+    },
+    {
+      "id": 4,
+      "category_id": 4,
+      "name": "Thắt lưng da",
+      "description": "Thắt lưng da bò thật, bền đẹp theo thời gian",
+      "price": 220000,
+      "stock_quantity": 150,
+      "image_url": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop"
+      ],
+      "is_featured": false,
+      "is_recommended": true,
+      "rating": 4.1,
+      "variants": [
+        {
+          "size": "S",
+          "color": "Brown",
+          "stock": 15
+        },
+        {
+          "size": "M",
+          "color": "Brown",
+          "stock": 20
+        },
+        {
+          "size": "L",
+          "color": "Brown",
+          "stock": 25
+        },
+        {
+          "size": "XL",
+          "color": "Brown",
+          "stock": 15
+        },
+        {
+          "size": "S",
+          "color": "Black",
+          "stock": 18
+        },
+        {
+          "size": "M",
+          "color": "Black",
+          "stock": 22
+        },
+        {
+          "size": "L",
+          "color": "Black",
+          "stock": 20
+        },
+        {
+          "size": "XL",
+          "color": "Black",
+          "stock": 12
+        },
+        {
+          "size": "S",
+          "color": "Navy",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "color": "Navy",
+          "stock": 15
+        },
+        {
+          "size": "L",
+          "color": "Navy",
+          "stock": 12
+        },
+        {
+          "size": "S",
+          "color": "Gray",
+          "stock": 8
+        },
+        {
+          "size": "M",
+          "color": "Gray",
+          "stock": 12
+        },
+        {
+          "size": "L",
+          "color": "Gray",
+          "stock": 10
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Văn T",
+          "rating": 4,
+          "comment": "Thắt lưng chất lượng tốt, da thật.",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Thị U",
+          "rating": 5,
+          "comment": "Mua tặng chồng, anh ấy rất thích!",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Văn V",
+          "rating": 4,
+          "comment": "Bền đẹp, phù hợp đi làm.",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Thị W",
+          "rating": 3,
+          "comment": "Tốt nhưng hơi cứng lúc đầu.",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Văn X",
+          "rating": 5,
+          "comment": "Chất lượng xuất sắc, giá hợp lý!",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Vũ Thị Y",
+          "rating": 4,
+          "comment": "Da thật, thiết kế đẹp.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-11-20T13:30:00Z",
+      "updated_at": "2024-12-01T08:15:00Z"
+    },
+    {
+      "id": 5,
+      "category_id": 5,
+      "name": "Quần jeans nam",
+      "description": "Quần jeans xanh đậm, form slim fit trẻ trung",
+      "price": 500000,
+      "stock_quantity": 40,
+      "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1542272604-787c3835535d?w=400&h=400&fit=crop"
+      ],
+      "is_featured": true,
+      "is_recommended": true,
+      "rating": 3.8,
+      "variants": [
+        {
+          "size": "S",
+          "color": "Blue",
+          "stock": 8
+        },
+        {
+          "size": "M",
+          "color": "Blue",
+          "stock": 12
+        },
+        {
+          "size": "L",
+          "color": "Blue",
+          "stock": 10
+        },
+        {
+          "size": "XL",
+          "color": "Blue",
+          "stock": 6
+        },
+        {
+          "size": "XXL",
+          "color": "Blue",
+          "stock": 4
+        },
+        {
+          "size": "S",
+          "color": "Black",
+          "stock": 7
+        },
+        {
+          "size": "M",
+          "color": "Black",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "color": "Black",
+          "stock": 8
+        },
+        {
+          "size": "XL",
+          "color": "Black",
+          "stock": 5
+        },
+        {
+          "size": "S",
+          "color": "Gray",
+          "stock": 6
+        },
+        {
+          "size": "M",
+          "color": "Gray",
+          "stock": 9
+        },
+        {
+          "size": "L",
+          "color": "Gray",
+          "stock": 7
+        },
+        {
+          "size": "S",
+          "color": "Navy",
+          "stock": 5
+        },
+        {
+          "size": "M",
+          "color": "Navy",
+          "stock": 8
+        },
+        {
+          "size": "L",
+          "color": "Navy",
+          "stock": 6
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Văn Z",
+          "rating": 4,
+          "comment": "Quần jeans chất lượng, form đẹp.",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Thị AA",
+          "rating": 3,
+          "comment": "Tạm được, hơi chật ở phần đùi.",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Văn BB",
+          "rating": 4,
+          "comment": "Phong cách trẻ trung, mặc thoải mái.",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Thị CC",
+          "rating": 5,
+          "comment": "Mua cho con trai, em ấy rất thích!",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Văn DD",
+          "rating": 3,
+          "comment": "Chất vải tốt nhưng màu hơi nhạt.",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Vũ Thị EE",
+          "rating": 4,
+          "comment": "Giá hợp lý, chất lượng ổn.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-11-25T15:45:00Z",
+      "updated_at": "2024-11-25T12:00:00Z"
+    },
+    {
+      "id": 6,
+      "category_id": 6,
+      "name": "Đầm dự tiệc",
+      "description": "Đầm dự tiệc sang trọng, phù hợp cho các sự kiện",
+      "price": 750000,
+      "stock_quantity": 25,
+      "image_url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=400&fit=crop"
+      ],
+      "is_featured": false,
+      "is_recommended": true,
+      "rating": 4.7,
+      "variants": [
+        {
+          "size": "S",
+          "color": "Red",
+          "stock": 3
+        },
+        {
+          "size": "M",
+          "color": "Red",
+          "stock": 5
+        },
+        {
+          "size": "L",
+          "color": "Red",
+          "stock": 4
+        },
+        {
+          "size": "XL",
+          "color": "Red",
+          "stock": 2
+        },
+        {
+          "size": "S",
+          "color": "Black",
+          "stock": 4
+        },
+        {
+          "size": "M",
+          "color": "Black",
+          "stock": 6
+        },
+        {
+          "size": "L",
+          "color": "Black",
+          "stock": 5
+        },
+        {
+          "size": "XL",
+          "color": "Black",
+          "stock": 3
+        },
+        {
+          "size": "S",
+          "color": "Navy",
+          "stock": 3
+        },
+        {
+          "size": "M",
+          "color": "Navy",
+          "stock": 4
+        },
+        {
+          "size": "L",
+          "color": "Navy",
+          "stock": 3
+        },
+        {
+          "size": "S",
+          "color": "Purple",
+          "stock": 2
+        },
+        {
+          "size": "M",
+          "color": "Purple",
+          "stock": 3
+        },
+        {
+          "size": "L",
+          "color": "Purple",
+          "stock": 2
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Thị FF",
+          "rating": 5,
+          "comment": "Đầm rất đẹp, phù hợp dự tiệc!",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Văn GG",
+          "rating": 5,
+          "comment": "Mua tặng vợ, cô ấy rất hài lòng!",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Thị HH",
+          "rating": 4,
+          "comment": "Chất vải cao cấp, thiết kế sang trọng.",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Văn II",
+          "rating": 5,
+          "comment": "Đẹp xuất sắc, đáng đồng tiền!",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Thị JJ",
+          "rating": 4,
+          "comment": "Form dáng đẹp, mặc rất tôn dáng.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Vũ Văn KK",
+          "rating": 5,
+          "comment": "Chất lượng tuyệt vời, sẽ mua lại!",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-11-28T15:45:00Z",
+      "updated_at": "2024-11-28T12:00:00Z"
+    },
+    {
+      "id": 7,
+      "category_id": 9,
+      "name": "Áo polo nam",
+      "description": "Áo polo nam cao cấp, phong cách thể thao",
+      "price": 280000,
+      "stock_quantity": 80,
+      "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop"
+      ],
+      "is_featured": true,
+      "is_recommended": false,
+      "rating": 4.3,
+      "variants": [
+        {
+          "size": "S",
+          "color": "Navy",
+          "stock": 12
+        },
+        {
+          "size": "M",
+          "color": "Navy",
+          "stock": 15
+        },
+        {
+          "size": "L",
+          "color": "Navy",
+          "stock": 10
+        },
+        {
+          "size": "XL",
+          "color": "Navy",
+          "stock": 8
+        },
+        {
+          "size": "S",
+          "color": "White",
+          "stock": 10
+        },
+        {
+          "size": "M",
+          "color": "White",
+          "stock": 14
+        },
+        {
+          "size": "L",
+          "color": "White",
+          "stock": 12
+        },
+        {
+          "size": "XL",
+          "color": "White",
+          "stock": 9
+        },
+        {
+          "size": "S",
+          "color": "Black",
+          "stock": 8
+        },
+        {
+          "size": "M",
+          "color": "Black",
+          "stock": 11
+        },
+        {
+          "size": "L",
+          "color": "Black",
+          "stock": 9
+        },
+        {
+          "size": "S",
+          "color": "Red",
+          "stock": 6
+        },
+        {
+          "size": "M",
+          "color": "Red",
+          "stock": 9
+        },
+        {
+          "size": "L",
+          "color": "Red",
+          "stock": 7
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Văn LL",
+          "rating": 4,
+          "comment": "Áo polo chất lượng tốt, mặc thoải mái.",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Thị MM",
+          "rating": 5,
+          "comment": "Mua cho chồng, anh ấy rất thích!",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Văn NN",
+          "rating": 4,
+          "comment": "Phong cách thể thao, phù hợp đi chơi.",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Thị OO",
+          "rating": 5,
+          "comment": "Chất vải mềm mại, form đẹp.",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Văn PP",
+          "rating": 3,
+          "comment": "Tốt nhưng hơi mỏng so với mong đợi.",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Vũ Thị QQ",
+          "rating": 4,
+          "comment": "Giá hợp lý, chất lượng ổn định.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-11-30T10:00:00Z",
+      "updated_at": "2024-11-30T10:00:00Z"
+    },
+    {
+      "id": 8,
+      "category_id": 10,
+      "name": "Áo blouse nữ",
+      "description": "Áo blouse nữ thanh lịch, phù hợp đi làm",
+      "price": 320000,
+      "stock_quantity": 45,
+      "image_url": "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=200&h=200&fit=crop",
+      "images": [
+        "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?w=400&h=400&fit=crop"
+      ],
+      "is_featured": false,
+      "is_recommended": false,
+      "rating": 4.0,
+      "variants": [
+        {
+          "size": "S",
+          "color": "White",
+          "stock": 8
+        },
+        {
+          "size": "M",
+          "color": "White",
+          "stock": 12
+        },
+        {
+          "size": "L",
+          "color": "White",
+          "stock": 10
+        },
+        {
+          "size": "XL",
+          "color": "White",
+          "stock": 6
+        },
+        {
+          "size": "S",
+          "color": "Pink",
+          "stock": 7
+        },
+        {
+          "size": "M",
+          "color": "Pink",
+          "stock": 10
+        },
+        {
+          "size": "L",
+          "color": "Pink",
+          "stock": 8
+        },
+        {
+          "size": "XL",
+          "color": "Pink",
+          "stock": 5
+        },
+        {
+          "size": "S",
+          "color": "Blue",
+          "stock": 6
+        },
+        {
+          "size": "M",
+          "color": "Blue",
+          "stock": 9
+        },
+        {
+          "size": "L",
+          "color": "Blue",
+          "stock": 7
+        },
+        {
+          "size": "S",
+          "color": "Black",
+          "stock": 5
+        },
+        {
+          "size": "M",
+          "color": "Black",
+          "stock": 8
+        },
+        {
+          "size": "L",
+          "color": "Black",
+          "stock": 6
+        }
+      ],
+      "reviews": [
+        {
+          "name": "Nguyễn Thị RR",
+          "rating": 4,
+          "comment": "Áo blouse đẹp, phù hợp đi làm.",
+          "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Trần Văn SS",
+          "rating": 4,
+          "comment": "Mua tặng vợ, cô ấy rất thích!",
+          "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Lê Thị TT",
+          "rating": 5,
+          "comment": "Chất vải mềm mại, thiết kế thanh lịch.",
+          "avatar": "https://images.unsplash.com/photo-1494790108755-2616b612b786?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Phạm Văn UU",
+          "rating": 3,
+          "comment": "Tạm được, hơi mỏng.",
+          "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Hoàng Thị VV",
+          "rating": 4,
+          "comment": "Form dáng đẹp, mặc thoải mái.",
+          "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face"
+        },
+        {
+          "name": "Vũ Văn WW",
+          "rating": 4,
+          "comment": "Chất lượng tốt trong tầm giá.",
+          "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+        }
+      ],
+      "created_at": "2024-11-29T14:30:00Z",
+      "updated_at": "2024-11-29T14:30:00Z"
+    }
+  ],
+  "banners": [
+    {
+      "banner_id": 1,
+      "id": 1,
+      "image_url": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=400&h=200&fit=crop",
+      "name": "Lễ Hội Mua Sắm Cuối Năm",
+      "title": "ĐẠI TIỆC MUA SẮM CUỐI NĂM - CƠ HỘI VÀNG CHỈ CÓ MỘT LẦN",
+      "description": "Chào đón mùa lễ hội rộn ràng với chương trình khuyến mãi lớn nhất trong năm!\n\n🛍️ Giảm giá lên đến 70% hàng ngàn sản phẩm hot nhất\n🎁 Ưu đãi đặc biệt dành riêng cho thành viên thân thiết\n🚚 Miễn phí vận chuyển toàn quốc cho mọi đơn hàng\n⏰ Thời gian có hạn: Từ ngày 23/05 đến 30/05 - Đừng bỏ lỡ!\n🔥 Cập nhật mỗi ngày - Mua sắm đã đang, thêm nhiều ưu đãi chờ bạn!\n🎯 Đảm bảo an toàn - Uy tín - Hậu mãi tận tâm\n\nNhanh tay - Số lượng có hạn và ưu đãi mãi có cơ hội tặng và khuyến mãi có hạn!\nDrezzup - Mua sắm thông minh, tiết kiệm tối đa!",
+      "start_date": "2024-12-01T00:00:00Z",
+      "end_date": "2024-12-31T23:59:59Z",
+      "is_active": true
+    },
+    {
+      "banner_id": 2,
+      "id": 2,
+      "image_url": "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=400&h=200&fit=crop",
+      "name": "Thời Trang Xuân",
+      "title": "THỜI TRANG NỮ XUÂN HÈ 2024 - TRENDY & CHIC",
+      "description": "Khám phá bộ sưu tập thời trang nữ mới nhất cho mùa xuân hè 2024!\n\n👗 Váy hoa vintage thanh lịch và nữ tính\n🌸 Phong cách Hàn Quốc hot trend\n💫 Chất liệu cao cấp, thoáng mát\n🎨 Màu sắc tươi sáng, trẻ trung\n✨ Thiết kế độc đáo, tôn dáng\n🛍️ Giảm giá đặc biệt 40% cho khách hàng mới\n🚚 Giao hàng nhanh trong 24h\n💝 Tặng kèm phụ kiện xinh xắn\n\nĐặt hàng ngay để nhận ưu đãi hấp dẫn!\nHotline: 1900-xxxx",
+      "start_date": "2024-12-01T00:00:00Z",
+      "end_date": "2024-12-25T23:59:59Z",
+      "is_active": true
+    },
+    {
+      "banner_id": 3,
+      "id": 3,
+      "image_url": "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=200&fit=crop",
+      "name": "Black Friday Mega Sale",
+      "title": "BLACK FRIDAY MEGA SALE - SIÊU KHUYẾN MÃI",
+      "description": "Sự kiện mua sắm lớn nhất trong năm đã trở lại!\n\n🖤 BLACK FRIDAY MEGA SALE\n⚡ Flash Sale mỗi giờ với giảm giá lên đến 80%\n🎯 Deal độc quyền chỉ có trong ngày hôm nay\n🔥 Săn voucher giảm giá cực khủng\n💳 Ưu đãi thanh toán online thêm 10%\n🎁 Quà tặng hấp dẫn cho 100 khách hàng đầu tiên\n📱 Mua ngay trên app để nhận thêm ưu đãi\n⏰ Chỉ trong 24h - Không thể bỏ lỡ!\n\nChuẩn bị sẵn sàng cho cuộc chiến mua sắm!\nTải app ngay để không bỏ lỡ deal hot!",
+      "start_date": "2024-11-29T00:00:00Z",
+      "end_date": "2024-11-30T23:59:59Z",
+      "is_active": true
+    }
+  ],
+  "user": {
+    "user_id": 1,
+    "name": "Nguyễn Văn A",
+    "phone": "0978654321",
+    "email": "nguyenvana@example.com",
+    "addresses": [
+      {
+        "address_id": 1,
+        "is_default": true,
+        "recipient_name": "Nguyễn Văn A",
+        "phone": "0978654321",
+        "address": "Văn Canh, Nam Từ Liêm, Hà Nội",
+        "country": "Việt Nam"
+      },
+      {
+        "address_id": 2,
+        "is_default": false,
+        "recipient_name": "Nguyễn Văn A",
+        "phone": "0978654321",
+        "address": "Cầu Giấy, Hà Nội",
+        "country": "Việt Nam"
+      }
+    ]
+  }
+}
