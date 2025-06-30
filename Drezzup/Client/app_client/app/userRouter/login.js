@@ -2,8 +2,10 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
-import { Alert, Dimensions, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useEffect, useState } from 'react';
+import { ActivityIndicator, Alert, Dimensions, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import { login } from '../../redux/actions/userActions';
 
 const { width, height } = Dimensions.get('window');
 
@@ -13,12 +15,27 @@ const LoginScreen = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
-    if (email === 'admin@gmail.com' && password === '12345') {
-      router.push('/userRouter/(tabs)/home');
-    } else {
-      Alert.alert('Lỗi', 'Email hoặc mật khẩu không đúng');
+  const dispatch = useDispatch();
+  const { loading, error, isLoggedIn } = useSelector((state) => state.user);
+
+  useEffect(() => {
+    if (isLoggedIn) {
+      router.replace('/userRouter/(tabs)/home');
     }
+  }, [isLoggedIn]);
+
+  useEffect(() => {
+    if (error) {
+      Alert.alert('Lỗi đăng nhập', error);
+    }
+  }, [error]);
+
+  const handleLogin = () => {
+    if (!email || !password) {
+      Alert.alert('Lỗi', 'Vui lòng nhập đầy đủ email và mật khẩu.');
+      return;
+    }
+    dispatch(login(email, password));
   };
 
   return (
@@ -90,8 +107,13 @@ const LoginScreen = () => {
           <TouchableOpacity 
             style={styles.loginButton}
             onPress={handleLogin}
+            disabled={loading}
           >
-            <Text style={styles.loginButtonText}>Đăng nhập</Text>
+            {loading ? (
+              <ActivityIndicator color="#fff" />
+            ) : (
+              <Text style={styles.loginButtonText}>Đăng nhập</Text>
+            )}
           </TouchableOpacity>
 
           <View style={styles.dividerContainer}>
@@ -207,8 +229,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  checkbox: {
-    width: 20,
+  checkbox: {width: 20,
     height: 20,
     borderRadius: 4,
     borderWidth: 2,

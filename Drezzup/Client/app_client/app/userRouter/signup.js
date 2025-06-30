@@ -2,18 +2,42 @@ import { Ionicons } from '@expo/vector-icons';
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Alert, Dimensions, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import { signup } from '../../redux/actions/signupActions';
+import { resetSignup } from '../../redux/reducers/signupSlice';
 
 const { width, height } = Dimensions.get('window');
 
 const SignupScreen = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
+
+  const dispatch = useDispatch();
+  const { loading, error, isSignedUp } = useSelector((state) => state.signup);
+
+  useEffect(() => {
+    if (isSignedUp) {
+      console.log('Component: Đăng ký thành công, chuyển về login');
+      Alert.alert('Thành công', 'Đăng ký thành công!', [
+        { text: 'OK', onPress: () => router.replace('/userRouter/login') }
+      ]);
+      dispatch(resetSignup());
+    }
+  }, [isSignedUp]);
+
+  useEffect(() => {
+    if (error) {
+      console.log('Component: Hiển thị lỗi đăng ký:', error);
+      Alert.alert('Lỗi đăng ký', error);
+    }
+  }, [error]);
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -28,21 +52,31 @@ const SignupScreen = () => {
   };
 
   const handleSignup = () => {
+    console.log('Component: Bắt đầu xử lý đăng ký');
+    if (!name.trim()) {
+      Alert.alert('Lỗi', 'Vui lòng nhập họ tên');
+      return;
+    }
+    if (name.trim().length < 2) {
+      Alert.alert('Lỗi', 'Họ tên phải có ít nhất 2 ký tự');
+      return;
+    }
+    if (name.trim().length > 50) {
+      Alert.alert('Lỗi', 'Họ tên không được quá 50 ký tự');
+      return;
+    }
     if (!email.trim()) {
       Alert.alert('Lỗi', 'Vui lòng nhập email');
       return;
     }
-
     if (!validateEmail(email)) {
       Alert.alert('Lỗi', 'Email không hợp lệ');
       return;
     }
-
     if (!password) {
       Alert.alert('Lỗi', 'Vui lòng nhập mật khẩu');
       return;
     }
-
     if (!validatePassword(password)) {
       Alert.alert(
         'Lỗi',
@@ -50,23 +84,12 @@ const SignupScreen = () => {
       );
       return;
     }
-
     if (password !== confirmPassword) {
       Alert.alert('Lỗi', 'Mật khẩu xác nhận không khớp');
       return;
     }
-
-    // Nếu tất cả validation đều pass
-    Alert.alert(
-      'Thành công',
-      'Đăng ký thành công!',
-      [
-        {
-          text: 'OK',
-          onPress: () => router.push('/userRouter/(tabs)/home')
-        }
-      ]
-    );
+    console.log('Component: Dispatch action signup');
+    dispatch(signup(name, email, password));
   };
 
   return (
@@ -89,6 +112,15 @@ const SignupScreen = () => {
         </View>
 
         <View style={styles.formContainer}>
+          <TextInput
+            style={styles.input}
+            placeholder="Họ tên"
+            placeholderTextColor="#666"
+            autoCapitalize="sentences"
+            value={name}
+            onChangeText={setName}
+          />
+          
           <TextInput
             style={styles.input}
             placeholder="Email"
@@ -156,8 +188,9 @@ const SignupScreen = () => {
           <TouchableOpacity 
             style={styles.signupButton}
             onPress={handleSignup}
+            disabled={loading}
           >
-            <Text style={styles.signupButtonText}>Đăng ký</Text>
+            <Text style={styles.signupButtonText}>{loading ? 'Đang đăng ký...' : 'Đăng ký'}</Text>
           </TouchableOpacity>
 
           <View style={styles.dividerContainer}>
