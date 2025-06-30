@@ -81,18 +81,16 @@ function HomeScreen() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "white",
   },
   scrollContent: {
     flexGrow: 1,
-    paddingTop: 10,
   },
   container: {
     flex: 1,
   },
   searchBarContainer: {
     paddingHorizontal: 16,
-    paddingTop: 10,
+    paddingTop: 40,
   },
   content: {
     paddingHorizontal: 16,

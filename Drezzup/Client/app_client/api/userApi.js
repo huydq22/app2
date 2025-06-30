@@ -1,3 +1,6 @@
+import axios from 'axios';
+
+const BASE_URL = "https://fizennn.click";
 const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 export const getUserData = async () => {
@@ -31,5 +34,14 @@ export const getDefaultAddress = async () => {
   } catch (error) {
     console.error("Get default address error:", error.message);
     return null;
+  }
+};
+
+export const loginUser = async (email, password) => {
+  try {
+    const response = await axios.post(`${BASE_URL}/v1/auth/login`, { email, password });
+    return response.data;
+  } catch (error) {
+    throw error.response?.data || error;
   }
 }; 

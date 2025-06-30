@@ -1,13 +1,36 @@
 import { LinearGradient } from 'expo-linear-gradient';
 import { router } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Alert, Dimensions, Image, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useDispatch, useSelector } from 'react-redux';
+import { forgotPassword } from '../../redux/actions/forgotPasswordActions';
+import { resetForgotPassword } from '../../redux/reducers/forgotPasswordSlice';
 
 const { width, height } = Dimensions.get('window');
 
 const ForgotPasswordScreen = () => {
   const [email, setEmail] = useState('');
+  
+  const dispatch = useDispatch();
+  const { loading, error, success, message } = useSelector((state) => state.forgotPassword);
+
+  useEffect(() => {
+    if (success) {
+      console.log('Component: Quên mật khẩu thành công, chuyển trang');
+      Alert.alert('Thành công', message, [
+        { text: 'OK', onPress: () => router.push('/userRouter/verify-success') }
+      ]);
+      dispatch(resetForgotPassword());
+    }
+  }, [success, message]);
+
+  useEffect(() => {
+    if (error) {
+      console.log('Component: Hiển thị lỗi quên mật khẩu:', error);
+      Alert.alert('Lỗi', error);
+    }
+  }, [error]);
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -15,6 +38,7 @@ const ForgotPasswordScreen = () => {
   };
 
   const handleResetPassword = () => {
+    console.log('Component: Bắt đầu xử lý quên mật khẩu');
     if (!email.trim()) {
       Alert.alert('Lỗi', 'Vui lòng nhập email');
       return;
@@ -25,21 +49,8 @@ const ForgotPasswordScreen = () => {
       return;
     }
 
-    // Kiểm tra email có tồn tại trong hệ thống không
-    if (email === 'admin@gmail.com') {
-      Alert.alert(
-        'Thành công',
-        'Link đặt lại mật khẩu đã được gửi đến email của bạn',
-        [
-          {
-            text: 'OK',
-            onPress: () => router.push('/userRouter/verify-success')
-          }
-        ]
-      );
-    } else {
-      Alert.alert('Lỗi', 'Email không tồn tại trong hệ thống');
-    }
+    console.log('Component: Dispatch action forgotPassword');
+    dispatch(forgotPassword(email));
   };
 
   return (
@@ -75,8 +86,11 @@ const ForgotPasswordScreen = () => {
           <TouchableOpacity 
             style={styles.resetButton}
             onPress={handleResetPassword}
+            disabled={loading}
           >
-            <Text style={styles.resetButtonText}>Gửi link đặt lại</Text>
+            <Text style={styles.resetButtonText}>
+              {loading ? 'Đang gửi...' : 'Gửi link đặt lại'}
+            </Text>
           </TouchableOpacity>
 
           <View style={styles.loginContainer}>
